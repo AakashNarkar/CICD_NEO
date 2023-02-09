@@ -23,8 +23,7 @@ class ViewController: UIViewController {
     @IBAction func addButtonAction(_ sender: UIButton) {
         let num1 = Int(num1TextField.text ?? "0") ?? 0
         let num2 = Int(num2TextField.text ?? "0") ?? 0
-        viewModel.addNumbers(num1: num1, num2: num2)
-        resultLabel.text = String(viewModel.result)
+        resultLabel.text = String(viewModel.addNumbers(num1: num1, num2: num2))
     }
 }
 

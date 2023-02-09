@@ -14,8 +14,8 @@ final class Neo_CICD_DemoTests: XCTestCase {
         let viewModel = ViewModel()
         let num1 = 5
         let num2 = 3
-        let result = 8
-        viewModel.addNumbers(num1: num1, num2: num2)
-        XCTAssertEqual(result, viewModel.result)
+        let expectedResult = 8
+        let result = viewModel.addNumbers(num1: num1, num2: num2)
+        XCTAssertEqual(expectedResult, result)
     }
 }
